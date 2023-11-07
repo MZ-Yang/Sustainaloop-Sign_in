@@ -17,6 +17,7 @@ body {
 }
 
 .box{
+  border-radius: 15px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -28,6 +29,7 @@ body {
   border-bottom: 1px solid rgba(255, 255, 255, 0.5);
   border-right: 1px solid rgba(255, 255, 255, 0.5);
   backdrop-filter: blur(60px);
+  background: rgba(50, 50, 50, 0.5);
 }
 
 .box > h2 {
@@ -61,6 +63,7 @@ body {
   transition: 0.2s;
   outline: none;
   padding: 0 10px;
+  letter-spacing: 1px;
 }
 
 .box .input-box > input:focus {
@@ -85,5 +88,31 @@ body {
 }
 
 .box .btn-box > a:hover {
-  color: rgba(255, 255, 255, 1);
+  color: rgba(0, 0, 255, 1);
+}
+
+.box .btn-box > div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: start;
+  margin-top: 20px;
+}
+
+.box .btn-box > div > button {
+  width: 120px;
+  height: 35px;
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 1);
+  color: rgba(0, 0, 0, 1);
+  transition: 0.2s;
+}
+
+.box .btn-box > div > button:nth-of-type(2) {
+  margin-left: 10px;
+}
+
+.box .btn-box > div > button:hover {
+  background: rgba(0, 139, 69, 1);
+  color: rgba(255, 255, 255, 0.8);
 }
